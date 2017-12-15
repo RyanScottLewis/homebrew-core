@@ -4,12 +4,12 @@ class CrystalLang < Formula
   revision 3
 
   stable do
-    url "https://github.com/crystal-lang/crystal/archive/0.23.1.tar.gz"
-    sha256 "8cf1b9a4eab29fca2f779ea186ae18f7ce444ce189c621925fa1a0c61dd5ff55"
+    url "https://github.com/crystal-lang/crystal/archive/0.24.0.tar.gz"
+    sha256 "c34f4326ee576f60b8960e331aae8d5265a12b30707582e1f5c6c6032d364a80"
 
     resource "shards" do
-      url "https://github.com/crystal-lang/shards/archive/v0.7.1.tar.gz"
-      sha256 "31de819c66518479682ec781a39ef42c157a1a8e6e865544194534e2567cb110"
+      url "https://github.com/crystal-lang/shards/archive/v0.7.2.tar.gz"
+      sha256 "97a3681e74d2fdcba0575f6906f4ba0aefc709a2eb672c7289c63176ff4f3be2"
     end
   end
 
@@ -40,9 +40,9 @@ class CrystalLang < Formula
   depends_on "libyaml" if build.with? "shards"
 
   resource "boot" do
-    url "https://github.com/crystal-lang/crystal/releases/download/0.23.0/crystal-0.23.0-1-darwin-x86_64.tar.gz"
-    version "0.23.0"
-    sha256 "5ffa252d2264ab55504a6325b7c42d0eb16065152d0adfee6be723fd02333fdf"
+    url "https://github.com/crystal-lang/crystal/releases/download/0.24.0/crystal-0.24.0-2-darwin-x86_64.tar.gz"
+    version "0.24.0"
+    sha256 "441baf80d2fa7a8e6b9daac4b19d7bdc649fa875c9ef8a0726a6ddb81bc0a47c"
   end
 
   def install
